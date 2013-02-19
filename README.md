@@ -1,16 +1,18 @@
 konami.js
 =========
 
-A small bit of JavaScript that recognizes the Konami code and triggers an event
+A small bit of JavaScript that recognizes the [Konami code](http://en.wikipedia.org/wiki/Konami_Code) and triggers an event of your choice.
 
 
 Usage
 =====
-
-Copy the code or load the file konami.js into whatever file that needs it and then add the following, which will show an alert box with the message ding when the code is correctly entered.
 
 ```javascript
 konami(function () {
   alert('ding');
 });
 ```
+
+This will register a listener on all key(up) events, wait for the right sequence and then call the supplied function, in this case show ding in an alert box.
+
+

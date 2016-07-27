@@ -22,9 +22,3 @@ konami(function () {
 ```
 
 This will register a listener on all key(up) events, wait for the right sequence and then call the supplied function, in this case show 'ding' in an alert box.
-
-Requirements
-============
-
-It uses [jQuery](http://jquery.com/) to register for the event but who doesn't have that loaded already? If you really want it to work without that it's easy to change. 
-

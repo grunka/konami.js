@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>konami.js</title>
+    <script src="konami.js"></script>
+    <script>
+        konami(function () {
+            var ding = document.getElementById('ding').style.opacity = 1;
+        });
+
+        setInterval(function () {
+            var ding = document.getElementById('ding');
+            if (ding) {
+                var currentOpacity = parseFloat(ding.style.opacity);
+                if (currentOpacity > 0) {
+                    var nextOpacity = currentOpacity - 0.1;
+                    if (nextOpacity < 0) {
+                        nextOpacity = 0;
+                    }
+                    ding.style.opacity = nextOpacity;
+                }
+            }
+        }, 100);
+    </script>
+</head>
+
+<body>
+    <p>&#x2B06;&#x2B06;&#x2B07;&#x2B07;&#x2B05;&#x27A1;&#x2B05;&#x27A1;&#x1F171;&#x1F170; &#x1F601;</p>
+    <h1 id="ding" style="opacity:0">DING</h1>
+</body>
+
+</html>

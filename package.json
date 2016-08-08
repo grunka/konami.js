@@ -13,7 +13,7 @@
   "keywords": [
     "konami"
   ],
-  "author": "John Wästerlund",
+  "author": "John Wästerlund <grunka@gmail.com> (https://grunka.github.io)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/grunka/konami.js/issues"

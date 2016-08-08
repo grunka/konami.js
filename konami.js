@@ -1,4 +1,5 @@
 (function () {
+    'use strict';
     function konami(callback) {
         var sequence = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
         var position = 0;
@@ -15,5 +16,9 @@
         });
     }
 
-    window.konami = konami;
+    if (typeof exports !== 'undefined') {
+        exports.konami = konami;
+    } else {
+        window.konami = konami;
+    }
 })();
